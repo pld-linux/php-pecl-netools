@@ -1,4 +1,5 @@
 %define		_modname	netools
+%define		_status		alpha
 Summary:	Networking tools
 Summary(pl):	Narzêdzia sieciowe
 Name:		php-pecl-%{_modname}
@@ -22,9 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Netools provides tools to deal with devices, TCP and UDP
 clients/servers, etc.
 
+This extension has in PEAR status: %{_status}
+
 %description -l pl
 Netools zawieraj± narzêdzia do pracy z urz±dzeniami sieciowymi,
 klientami/serwerami TCP oraz UDP, itp.
+
+To rozszerzenie ma w PEAR status: %{_status}
 
 %prep
 %setup -q -c
