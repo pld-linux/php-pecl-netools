@@ -22,7 +22,7 @@ Netools provides tools to deal with devices, TCP and UDP
 clients/servers, etc.
 
 %description -l pl
-Netools-y dostarczaj± narzêdzi do pracy z urz±dzeniami,
+Netools zawieraj± narzêdzia do pracy z urz±dzeniami sieciowymi,
 klientami/serwerami TCP oraz UDP, itp.
 
 %prep
@@ -36,7 +36,7 @@ phpize
 %configure \
 	--with-%{_modname}=%{_prefix}/X11R6/include/X11/
 
-%{__make} CPPFLAGS="-DHAVE_CONFIG_H -I%{_prefix}/X11R6/include/X11/"
+%{__make} CPPFLAGS="-DHAVE_CONFIG_H -I/usr/X11R6/include/X11"
 
 %install
 rm -rf $RPM_BUILD_ROOT
