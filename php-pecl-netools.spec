@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Netools provides tools to deal with devices, TCP and UDP
 clients/servers, etc.
 
-This extension has in PEAR status: %{_status}.
+In PECL status of this package is: %{_status}.
 
 %description -l pl
 Netools zawieraj± narzêdzia do pracy z urz±dzeniami sieciowymi,
 klientami/serwerami TCP oraz UDP, itp.
 
-To rozszerzenie ma w PEAR status: %{_status}.
+To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
 %setup -q -c
