@@ -9,7 +9,7 @@ License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	4e8da7ee78ff40c9eaec64568735eaeb
-URL:		http://pear.php.net/package/%{_pearname}/
+URL:		http://pear.php.net/package/netools/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	php-devel
