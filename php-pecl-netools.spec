@@ -35,8 +35,6 @@ To rozszerzenie ma w PECL status: %{_status}.
 %build
 cd %{_modname}-%{version}
 phpize
-%{__aclocal}
-%{__autoconf}
 %configure \
 	--with-%{_modname}=%{_prefix}/X11R6/include/X11/
 
