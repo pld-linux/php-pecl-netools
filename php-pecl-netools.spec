@@ -6,19 +6,18 @@
 %define		_status		alpha
 %define		_sysconfdir	/etc/php
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
-
 Summary:	Networking tools
 Summary(pl):	Narzêdzia sieciowe
 Name:		php-pecl-%{_modname}
 Version:	0.2
-Release:	0.1
+Release:	0.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	4e8da7ee78ff40c9eaec64568735eaeb
 URL:		http://pecl.php.net/package/netools/
 BuildRequires:	php-devel >= 3:5.0.0
-BuildRequires:	rpmbuild(macros) >= 1.238
+BuildRequires:	rpmbuild(macros) >= 1.254
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
