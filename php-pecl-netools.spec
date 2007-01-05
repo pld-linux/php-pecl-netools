@@ -39,7 +39,7 @@ To rozszerzenie ma w PECL status: %{_status}.
 cd %{_modname}-%{version}
 phpize
 %configure \
-	--with-%{_modname}=%{_prefix}/X11R6/include/X11/
+	--with-%{_modname}=/usr/X11R6/include/X11
 
 %{__make} CPPFLAGS="-DHAVE_CONFIG_H -I/usr/X11R6/include/X11"
 
