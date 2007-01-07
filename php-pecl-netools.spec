@@ -14,6 +14,8 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	4e8da7ee78ff40c9eaec64568735eaeb
 URL:		http://pecl.php.net/package/netools/
+# ??? (lcrzo.h, lcrzo_init() in liblcrzo)
+BuildRequires:	lcrzo-devel
 BuildRequires:	php-devel >= 3:5.0.0
 BuildRequires:	rpmbuild(macros) >= 1.344
 %{?requires_php_extension}
@@ -38,10 +40,9 @@ To rozszerzenie ma w PECL status: %{_status}.
 %build
 cd %{_modname}-%{version}
 phpize
-%configure \
-	--with-%{_modname}=/usr/X11R6/include/X11
+%configure
 
-%{__make} CPPFLAGS="-DHAVE_CONFIG_H -I/usr/X11R6/include/X11"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
