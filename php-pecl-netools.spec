@@ -5,7 +5,7 @@
 %define		_modname	netools
 %define		_status		alpha
 Summary:	Networking tools
-Summary(pl):	Narzêdzia sieciowe
+Summary(pl.UTF-8):   NarzÄ™dzia sieciowe
 Name:		php-pecl-%{_modname}
 Version:	0.2
 Release:	0.2
@@ -28,8 +28,8 @@ clients/servers, etc.
 
 In PECL status of this package is: %{_status}.
 
-%description -l pl
-Netools zawieraj± narzêdzia do pracy z urz±dzeniami sieciowymi,
+%description -l pl.UTF-8
+Netools zawierajÄ… narzÄ™dzia do pracy z urzÄ…dzeniami sieciowymi,
 klientami/serwerami TCP oraz UDP, itp.
 
 To rozszerzenie ma w PECL status: %{_status}.
