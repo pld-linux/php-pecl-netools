@@ -4,8 +4,8 @@
 # configure: error: Please reinstall the lcrzo distribution
 %define		_modname	netools
 %define		_status		alpha
-Summary:	Networking tools
-Summary(pl.UTF-8):	Narzędzia sieciowe
+Summary:	%{_modname} - Networking tools
+Summary(pl.UTF-8):	%{_modname} - Narzędzia sieciowe
 Name:		php-pecl-%{_modname}
 Version:	0.2
 Release:	0.2
